@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <title>P&eacute;ndulos Acoplados</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../ph/app.css">
+    <style>
+        div#total {
+            width: 760px;
+            height: 400px;
+        }
+
+        div#canvas {
+            width: 560px;
+            height: 400px;
+        }
+
+        div#panel {
+            left: 560px;
+            width: 200px;
+            height: 400px;
+        }
+
+        input[type="text"] {
+            left: 40px;
+            width: 80px;
+        }
+
+        button {
+            width: 180px;
+        }
+
+        .pos1 {
+            left: 10px;
+        }
+
+        .pos3 {
+            left: 140px;
+        }
+    </style>
+    <script src="coupledpendula.js"></script>
+    <script src="coupledpendula_es.js"></script>
+    <script src="page_phes.js"></script>
+</head>
+
+<body>
+
+    <h1>P&eacute;ndulos Acoplados</h1>
+
+
+    <div id="total">
+        <div id="canvas"><canvas id="cv" width=560 height=400>This browser doesn't support HTML5 canvas!</canvas></div>
+        <div id="panel">
+            <div style="top: 20px;"><button id="bu1" style="background-color: #00ffff;"></button></div>
+            <div style="top: 70px;"><button id="bu2" style="background-color: #ffff00;"></button></div>
+            <div style="top: 120px;"><input type="checkbox" id="cbSlow" name="cbSlow" value=""><label for="cbSlow"
+                    id="lbSlow"></label></div>
+            <div style="top: 180px;"><span class="pos1" id="ip0"></span></div>
+            <div style="top: 230px;"><input type="text" id="ip1a"><span class="pos3" id="ip1b"></span></div>
+            <div style="top: 280px;"><input type="text" id="ip2a"><span class="pos3" id="ip2b"></span></div>
+            <div style="top: 350px;"><span class="pos1" id="author"></span></div>
+            <div style="top: 370px;"><span class="pos1" id="translator"></span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
